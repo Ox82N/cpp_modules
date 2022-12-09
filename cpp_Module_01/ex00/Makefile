@@ -6,7 +6,7 @@
 #    By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/13 14:28:32 by obenjair          #+#    #+#              #
-#    Updated: 2022/10/13 14:29:07 by obenjair         ###   ########.fr        #
+#    Updated: 2022/12/09 12:52:34 by obenjair         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = zombies
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp 
+SRC = ./src/main.cpp ./src/Zombie.cpp ./src/newZombie.cpp ./src/randomChump.cpp 
 
 INC = Zombie.hpp
 

@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/14 19:40:31 by obenjair          #+#    #+#             */
-/*   Updated: 2022/11/03 22:18:11 by obenjair         ###   ########.fr       */
+/*   Created: 2022/10/14 19:40:47 by obenjair          #+#    #+#             */
+/*   Updated: 2022/12/09 16:12:55 by obenjair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../inc/Zombie.hpp"
 
-
-int main()
+Zombie* zombieHorde(int Zombies_Number, std::string name)
 {
-	int i = 0;
-	Zombie* newZombies = zombieHorde(5, "otmane"); // create 5 zombies with the name otmane and store them in an array of pointers
-	while(i < 5) // loop to print the name if each zombie
+	Zombie* newZombies = new Zombie[Zombies_Number]; // Zombie* is a pointer to a Zombie object Zombie[Zombies_Number] is an array of Zombie objects
+	while(Zombies_Number >= 0)
 	{
-	 	newZombies[i].announce();
-	 	i++;
+		newZombies[Zombies_Number].initName(name); // initName is a method of the Zombie class
+		Zombies_Number--;
 	}
-	delete[] newZombies; //delete[] an array of zombies on the heap
+	return newZombies;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: benjairi <benjairi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 18:07:18 by obenjair          #+#    #+#             */
-/*   Updated: 2022/12/08 20:25:22 by benjairi         ###   ########.fr       */
+/*   Updated: 2022/12/09 12:48:09 by obenjair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
+
+int PhoneBook::count = 0;
+
 /* constructor */
 PhoneBook::PhoneBook()
 {
@@ -47,5 +50,3 @@ int PhoneBook::getcount()
     //return this->count;
     return count;
 }
-
-int PhoneBook::count = 0;

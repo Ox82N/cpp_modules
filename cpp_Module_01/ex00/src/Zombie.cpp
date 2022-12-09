@@ -6,23 +6,25 @@
 /*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 14:28:41 by obenjair          #+#    #+#             */
-/*   Updated: 2022/11/03 20:26:07 by obenjair         ###   ########.fr       */
+/*   Updated: 2022/12/09 12:58:42 by obenjair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp" 
+#include "../inc/Zombie.hpp" 
 
-
-Zombie::Zombie(std::string ZombieName) // constructor used to initialize the object 
+/* constructor used to initialize the object */
+Zombie::Zombie(std::string ZombieName)
 {
 	this->name = ZombieName; // set the value of the object. // this is a pointer to the object itself	
 }
 
-void Zombie::announce(void) // function to print the name of the Zombie 
+/* function to print the name of the Zombie */
+void Zombie::announce(void)
 {
 	std::cout << this->name << ": " << "BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
+/* destructor to destroy the object and deallocate the memory */
 Zombie::~Zombie(void)
 {
 	std::cout << name << ": " << "is dead !" << std::endl;

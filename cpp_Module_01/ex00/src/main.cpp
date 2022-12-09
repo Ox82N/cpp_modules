@@ -6,11 +6,11 @@
 /*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/13 14:28:28 by obenjair          #+#    #+#             */
-/*   Updated: 2022/11/03 21:04:39 by obenjair         ###   ########.fr       */
+/*   Updated: 2022/12/09 14:51:15 by obenjair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "../inc/Zombie.hpp"
 
 int main()
 {
@@ -25,6 +25,16 @@ int main()
 	Anna->announce();
 	delete Anna;
 }
-// what case is better to use the heap or the stack?
+
+/* what case is better to use the heap or the stack?
+ the stack is faster than the heap because it is a fixed size and the heap is dynamic.
+ difference between stack and heap is that the stack is a fixed size and the heap is dynamic. */
+
+// this exercise is about creating a zombie class and a function that creates a zombie on the heap and then delete it.
+// we use the new operator to allocate on the heap and the delete operator to deallocate on the heap.
+// exercise to understand the difference between the stack and the heap.
+// to allocate memory on the stack we use the {} and to allocate memory on the heap we use the new operator.
+// to deallocate memory on the stack we use the {} and to deallocate memory on the heap we use the delete operator.
+
+// defference between the stack and the heap is that the stack is a fixed size and the heap is dynamic.
 // the stack is faster than the heap because it is a fixed size and the heap is dynamic.
-// difference between stack and heap is that the stack is a fixed size and the heap is dynamic.

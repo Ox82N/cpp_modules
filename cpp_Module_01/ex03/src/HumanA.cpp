@@ -1,39 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/05 19:26:50 by obenjair          #+#    #+#             */
-/*   Updated: 2022/11/05 19:48:08 by obenjair         ###   ########.fr       */
+/*   Created: 2022/11/05 19:27:12 by obenjair          #+#    #+#             */
+/*   Updated: 2022/12/09 17:01:56 by obenjair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
-#include "HumanA.hpp"
-#include "HumanB.hpp"
 #include <iostream>
+#include "../inc/HumanA.hpp"
 
-
-int main()
+HumanA::HumanA( std::string name, Weapon &weapon ): name(name), weapon(weapon)
 {
-	{
-		Weapon        club = Weapon("crude spiked club");
+}
 
-		HumanA bob("HumanA", club);
-		bob.attack();
-		club.setType("some other type of club");
-		bob.attack();
-	}
-	{
-		Weapon        club = Weapon("crude spiked club");
+HumanA::~HumanA( void )
+{
+}
 
-		HumanB jim("HumanB");
-		jim.setWeapon(club);
-		jim.attack();
-		club.setType("some other type of club");
-		jim.attack();
-	}
-	return 0;
+void	HumanA::attack( void ) const
+{
+	std::cout << this->name << " attacks with their " << this->weapon.getType()
+		<< std::endl;
+}
+
+Weapon&	HumanA::getWeapon( void ) const
+{
+	return (this->weapon);
 }

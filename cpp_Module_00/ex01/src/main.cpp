@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: benjairi <benjairi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 18:05:55 by obenjair          #+#    #+#             */
-/*   Updated: 2022/12/08 20:36:33 by benjairi         ###   ########.fr       */
+/*   Updated: 2022/12/09 12:49:47 by obenjair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <iomanip>
 #include <iostream>
 #include <string>
+
 /* std:: is used to access the standard library of c++ */
 void add_Contact(PhoneBook *phoneBook)
 {
@@ -56,15 +57,15 @@ std::string long_input(std::string string)
     }
     return (string);
 }
-/*try statement allows you to define a block of code to be tested for errors while it is being executed */
 
+/*try statement allows you to define a block of code to be tested for errors while it is being executed */
 void search_contact(PhoneBook *phoneBook)
 {
-    int index ; // index is used to get the index of the contact in the phonebook
-    std::string str_index; // the index number of the contact if the table is not empty
-    int count; // count is used to count the number of contacts in the phonebook
+    int index ;
+    std::string str_index;
+    int count;
     int i;
-    Contact contact; // contact is an object of the class Contact which is used to get the contact from the phonebook
+    Contact contact;
 
     i = 0;
     count = phoneBook->getcount();
@@ -75,7 +76,7 @@ void search_contact(PhoneBook *phoneBook)
     std::cout << "  nickname" << std::endl;
     std::cout << "----------|----------|----------|----------" << std::endl;
     
-    while(i < count) // this while is used to print the contacts in the phonebook 
+    while(i < count)
     {
         contact = phoneBook->getcontact(i);
         std::cout << std::setw(10) << i + 1 << "|";
@@ -113,10 +114,11 @@ void search_contact(PhoneBook *phoneBook)
         std::cout << "there is no contact in the phonebook." << std::endl;
 
 }
-// add_contact(&phonebook): we pass the address of the object to the function */
+
+/*add_contact(&phonebook): we pass the address of the object to the function */
 int main(void)
 {
-    PhoneBook phonebook; // we create an object from the class PhoneBook to access the functions of the class
+    PhoneBook phonebook;
     std::cout << "Welcome to the Phonebook ;)" << std::endl;
     std::cout << "Use one of these commands :'ADD','SEARCH' or 'EXIT'." << std::endl;
     std::cout << "ADD : to add a new contact." << std::endl;

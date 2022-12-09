@@ -6,12 +6,12 @@
 /*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/05 19:27:36 by obenjair          #+#    #+#             */
-/*   Updated: 2022/11/05 20:37:34 by obenjair         ###   ########.fr       */
+/*   Updated: 2022/12/09 16:39:15 by obenjair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "HumanB.hpp"
+#include "../inc/HumanB.hpp"
 
 HumanB::HumanB( std::string name ): name(name), weapon(nullptr)
 {

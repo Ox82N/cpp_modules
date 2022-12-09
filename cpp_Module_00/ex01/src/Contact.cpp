@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: benjairi <benjairi@student.42.fr>          +#+  +:+       +#+        */
+/*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 18:07:11 by obenjair          #+#    #+#             */
-/*   Updated: 2022/12/08 20:43:46 by benjairi         ###   ########.fr       */
+/*   Updated: 2022/12/09 12:48:23 by obenjair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,13 @@ Contact:: Contact()
 {
     return ;
 }
+
 /* destructor of the class */
 Contact:: ~Contact() 
 {
     return ;
 }
+
 /* getFirstname is a function that return value of firstName */
 /*this-> is used to access the private variable of the class */
 std::string Contact:: getFirstname()
