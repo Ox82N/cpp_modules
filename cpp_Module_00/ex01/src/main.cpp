@@ -6,7 +6,7 @@
 /*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 18:05:55 by obenjair          #+#    #+#             */
-/*   Updated: 2022/12/09 12:49:47 by obenjair         ###   ########.fr       */
+/*   Updated: 2022/12/12 14:38:19 by obenjair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,8 @@ void search_contact(PhoneBook *phoneBook)
     }
     if (count > 0)
     {
-        std::cout<< " enter the index of the contact that you want to see > ";
+        std::cout<< " enter the index of the contact that you want to see :" << std::endl;
+        std::cout << "index -> ";
         std::getline(std::cin, str_index);
         try
         {
@@ -103,11 +104,11 @@ void search_contact(PhoneBook *phoneBook)
         else
         {
             contact = phoneBook->getcontact(index);
-            std::cout << "-firstname     -> "<< contact.getFirstname() << std::endl;
-            std::cout << "-lastname      -> "<< contact.getLastname() << std::endl;
-            std::cout << "-nickname      -> "<< contact.getNickname() << std::endl;
-            std::cout << "-phonenumber   -> "<< contact.getPhoneNumber() << std::endl;
-            std::cout << "-darkestsecret -> "<< contact.getDarkestSecret() << std::endl;
+            std::cout << "firstname     -> "<< contact.getFirstname() << std::endl;
+            std::cout << "lastname      -> "<< contact.getLastname() << std::endl;
+            std::cout << "nickname      -> "<< contact.getNickname() << std::endl;
+            std::cout << "phonenumber   -> "<< contact.getPhoneNumber() << std::endl;
+            std::cout << "darkestsecret -> "<< contact.getDarkestSecret() << std::endl;
         }
     }
     else
@@ -141,5 +142,3 @@ int main(void)
     std::cout << "good bye :)" << std::endl;
     return 0;
 }
-
-

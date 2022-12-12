@@ -6,7 +6,7 @@
 /*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 18:07:18 by obenjair          #+#    #+#             */
-/*   Updated: 2022/12/09 12:48:09 by obenjair         ###   ########.fr       */
+/*   Updated: 2022/12/12 16:27:44 by obenjair         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,29 +17,29 @@
 
 int PhoneBook::count = 0;
 
-/* constructor */
 PhoneBook::PhoneBook()
 {
     this->index = 0;
     return ;
 }
-/* destructor */
+
 PhoneBook::~PhoneBook()
 {
     return ;
 }
-/* getter */
+
 /* this is a function that return a contact  */
 Contact PhoneBook::getcontact(int index)
 {
-    return (this->contacts[index]);
+    //return (this->contacts[index]);
+    return contacts[index];
 }
-/* setter */
+
 /* function that set a contact */
 void PhoneBook::setcontact(Contact contact)
 {
     this->contacts[this->index] = contact;
-    if (count < 8)
+    if (count < 8) // if the number of contacts is less than 8
         count += 1;
     this->index = (this->index + 1) % 8;
 }

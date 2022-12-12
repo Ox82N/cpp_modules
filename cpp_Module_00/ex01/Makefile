@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: benjairi <benjairi@student.42.fr>          +#+  +:+       +#+         #
+#    By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/07 18:04:36 by obenjair          #+#    #+#              #
-#    Updated: 2022/12/08 18:40:47 by benjairi         ###   ########.fr        #
+#    Updated: 2022/12/12 16:14:53 by obenjair         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRC=./src/main.cpp ./src/Contact.cpp ./src/PhoneBook.cpp
 RM=rm -rf
 
 all : $(TARGET)
-
+	
 $(TARGET) :$(SRC)
 	$(C++) $(C++FLAGS) $(SRC) -o $(TARGET)
 
