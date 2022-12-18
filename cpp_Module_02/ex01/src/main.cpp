@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
+/*   By: benjairi <benjairi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 17:18:37 by obenjair          #+#    #+#             */
-/*   Updated: 2022/11/05 14:46:47 by obenjair         ###   ########.fr       */
+/*   Updated: 2022/12/18 15:32:17 by benjairi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include "Fixed.hpp"
+#include "../inc/Fixed.hpp"
 
 
 int main(void)

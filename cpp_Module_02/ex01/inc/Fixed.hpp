@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+        */
+/*   By: benjairi <benjairi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 17:22:22 by obenjair          #+#    #+#             */
-/*   Updated: 2022/11/05 16:02:06 by obenjair         ###   ########.fr       */
+/*   Updated: 2022/12/18 15:31:23 by benjairi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
+#include <cmath>
 
 
 class Fixed{
@@ -19,10 +20,10 @@ class Fixed{
 		static const int fractional_bits = 8;
 
 	public:
-		Fixed(); 
-		Fixed(const Fixed& other);
-		Fixed(const int fixed_point_value);
-		Fixed(const float fixed_point_value); // 
+		Fixed();
+		Fixed(const Fixed& other); // Copy constructor
+		Fixed(const int fixed_point_value); // Int constructor
+		Fixed(const float fixed_point_value); // Float constructor
         float toFloat(void) const;
         int toInt(void) const;
 		~Fixed();
@@ -32,3 +33,7 @@ class Fixed{
 };
 
 std::ostream& operator<< (std::ostream& outstream, Fixed const& obj);
+
+// toFloat: Converts the fixed point value to a floating point value.
+// toInt: Converts the fixed point value to an integer value.
+// The assignment operator: Assigns a Fixed to another Fixed.

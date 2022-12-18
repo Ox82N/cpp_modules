@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: obenjair <obenjair@student.42.fr>          +#+  +:+       +#+         #
+#    By: benjairi <benjairi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/17 19:31:10 by obenjair          #+#    #+#              #
-#    Updated: 2022/10/17 19:31:59 by obenjair         ###   ########.fr        #
+#    Updated: 2022/12/18 14:40:31 by benjairi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = fixed
 
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Fixed.cpp
+SRC = ./src/main.cpp ./src/Fixed.cpp
 
 INC = Fixed.hpp
 
